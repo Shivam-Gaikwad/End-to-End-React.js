@@ -1,0 +1,11 @@
+create an react app
+
+visit tailwind website
+
+copy command : npm install tailwindcss @tailwindcss/vite
+
+then open vite.congig.js add import tailwind there and add 
+
+paste this inside the index.css  : @import "tailwindcss";
+
+and now we can use tailwindcss directly inside the project

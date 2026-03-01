@@ -1,0 +1,128 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Background */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main Container */
+.app-container {
+  width: 90%;
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  color: white;
+}
+
+/* Heading */
+.app-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+/* Input & Textarea */
+input, textarea {
+  padding: 12px 15px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  transform: scale(1.02);
+  box-shadow: 0 0 10px rgba(255,255,255,0.6);
+}
+
+/* Button */
+button {
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  background: linear-gradient(135deg, #ff9966, #ff5e62);
+  color: white;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Notes Grid */
+.notes-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* Single Note Card */
+.note-card {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px;
+  border-radius: 15px;
+  transition: 0.3s ease;
+  position: relative;
+  min-height: 120px;
+}
+
+.note-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Note Title */
+.note-card h3 {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+/* Note Content */
+.note-card p {
+  font-size: 13px;
+  line-height: 1.4;
+  opacity: 0.9;
+}
+
+/* Delete Button */
+.delete-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: crimson;
+  padding: 5px 8px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.delete-btn:hover {
+  background: darkred;
+}

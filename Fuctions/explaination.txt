@@ -1,0 +1,23 @@
+we can create an function inside the tag also
+can create outside the tag and simply call inside the tag
+
+
+eg:
+
+function displayOnclick(){
+    console.log('button wa clicked');
+};
+
+<button Onclick ={displayOnclick}> Click me </button>
+
+or
+
+<button Onclick ={function displayOnclick(){
+    console.log('button wa clicked');
+}}> Click me </button>
+
+or arrow function 
+
+<Button Onclick={ ()=>{
+    console.log('Button was clicked ')
+}}> Click me </Button>
